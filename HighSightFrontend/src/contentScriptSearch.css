@@ -1,0 +1,46 @@
+mark {
+    background: transparent;
+    color: inherit;
+}
+mark.animate {
+    background-position: left bottom;
+    color: black;
+}
+mark.negative {
+    background: transparent;
+    background: linear-gradient(to right, transparent 50%, #f2afab 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .5s ease;
+    color: darkviolet;
+}
+/*
+mark.positive.animate {
+    background-position: left bottom;
+    color: black;
+}
+
+ */
+mark.positive {
+    background: transparent;
+    background: linear-gradient(to right, transparent 50%, #a7e2b6 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .5s ease;
+    color: darkviolet;
+}
+
+/*mark.neutral.animate {
+    background-position: left bottom;
+    color: black;
+}
+
+ */
+mark.neutral {
+    background: transparent;
+    background: linear-gradient(to right, transparent 50%, #a0a0a0 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .5s ease;
+    color: darkviolet;
+}

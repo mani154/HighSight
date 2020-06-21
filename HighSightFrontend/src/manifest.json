@@ -1,0 +1,57 @@
+{
+  "name": "HighSight",
+  "version": "1.0",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "exclude_globs": [
+        "*google.com/search*",
+        "*google.co.in/search*"
+
+      ],
+      "run_at": "document_end",
+      "js": [
+        "mark.js",
+        "contentScript.js",
+        "html5tooltips/html5tooltips.js",
+        "html5tooltips/tooltipPrivateMethods.js"
+      ],
+      "css" : [
+        "contentScript.css",
+        "html5tooltips/html5tooltips.css",
+        "html5tooltips/html5tooltips.animation.css"
+      ]
+    },
+    {
+      "matches": [
+        "*://www.google.com/search*",
+        "*://www.google.co.in/search*"
+      ],
+      "run_at": "document_end",
+      "js": [
+        "mark.js",
+        "contentScriptSearch.js"
+      ],
+      "css" : [
+        "contentScriptSearch.css"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "html5tooltips/html5tooltips.js",
+    "html5tooltips/html5tooltips.css",
+    "html5tooltips/html5tooltips.animation.css",
+    "html5tooltips/tooltipPrivateMethods.js"
+  ],
+  "description": "A Dynamic Content Promotion extension crowd-sourced over a closed network.",
+  "manifest_version": 2
+}

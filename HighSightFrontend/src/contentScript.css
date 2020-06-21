@@ -1,0 +1,39 @@
+mark {
+    background: transparent;
+    background: linear-gradient(to right, #f0ad4e 50%, transparent 50%);
+    background-position: right bottom;
+    background-size: 200% 100%;
+    transition: all .5s ease;
+    color: black;
+}
+
+mark.animate {
+    background-position: left bottom;
+    color: #000;
+}
+
+#useful {
+    background-color: #38ba00;  /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#inaccurate {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
